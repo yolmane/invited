@@ -1,0 +1,312 @@
+*   {
+margin: 0;
+padding: 0;
+text-transform: uppercase;
+}
+a   {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+.relative   {
+    position: relative;
+}
+.container  {
+    /* max-width: 1240px; */
+    margin: 0 auto;
+}
+
+body    {
+    background-color: #f7f7f5;;
+    padding: 0;
+}
+
+.padding {
+    padding: 0 10%;
+}
+.header {
+    padding: 0 5%;
+}
+.header__inner  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    background-color: #f7f7f5;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 0 65px;
+}
+
+.td__img-heart  {
+    background-image: url(/fonts/heart_null.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__header    {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.containers {
+    width: 32%;
+    height: 350px;
+}
+.header__newlyweds {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header__image-first    {
+    height: 500px;
+    filter: alpha(Opacity = 50);
+    opacity: 0.50;
+    rotate: -36deg;
+    
+}
+.header__center-invite {
+    display: flex;
+    justify-content: center;
+}
+.header__newlyweds-names {
+    height: 500px;
+    width: 500px;
+    align-items: center;
+    background: url(../fonts/center.png) no-repeat center top/cover;
+    background-size: cover;
+}
+.logo__img{
+    height: 70px;
+    width: 70px;
+}
+.newlyweds__names-text{
+    line-height:1.6;
+    padding-bottom: 45px;
+}
+.header__center {
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.friends__block-center {
+    padding-left: 20%;
+    width: 180px;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 10px;
+    text-align: center;
+}
+.friends__block-center div:last-child {
+    padding-bottom: 0;
+}
+
+.image__wrapper {
+    z-index: -1;
+    position: absolute;
+    width: 200px; /* Ширина блока обертки */
+    height: 200px; /* Высота блока обертки */
+    overflow: hidden; /* Обрезаем контент, выходящий за пределы блока */
+}
+
+.image__wrapper img {
+    width: 100%; /* Ширина картинки равна ширине блока обертки */
+    height: auto; /* Автоматическая высота, сохраняющая пропорции */
+     /* Переместить влево на 50px, чтобы показать обрезанную часть */
+}
+.wrapper-one {
+    left: 13%;
+    top: -114%;
+}
+.wrapper-two {
+    left: 18%;
+    top: -54%;
+    rotate: 33deg;
+}
+.wrapper-tree {
+    left: 65%;
+    top: -67%;
+    rotate: 23deg;
+}
+
+.block__arrow {
+    height: 10px; /* Высота блока */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f5;
+}
+
+.block__arrow {
+    animation: moveDown 1s infinite alternate;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px); /* Смещение вниз на 20px */
+    }
+}
+
+.wrapper__data {
+    width: 100px;
+    rotate: 16deg;
+    padding-left: 30%;
+}
+
+.calendar {
+    width: 100%;
+    height: 200px;
+}
+
+.section__traveler {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.traveler__block-center {
+    padding-left: 20%;
+    width: 180px;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 10px;
+    text-align: center;
+}
+.traveler__image-first {
+    height: 350px;
+    filter: alpha(Opacity = 50);
+    opacity: 0.50;
+    rotate: 123deg;
+}
+.wrapper__travel {
+    left: 13%;
+    top: -114%;
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.section__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.wrapper__map {
+    
+    width: 100px;
+    rotate: 16deg;
+    padding-left: 10%;
+}
+.programm__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .container__day-programm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.block__day-programm {
+    background-color: #f1c40f;
+    opacity: 0;
+  animation: ani 2.5s forwards;
+} */
+/* @keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  } */
+
+/* .heart:before,:after{
+    content:"";
+    width: 60px;
+
+    height: 100%;
+    background-color:green;
+    border-radius: 30px 30px 0 0;
+}
+.heart::before{
+    left: 100px;
+    transform:rotate(45deg);
+}
+.heart:after{
+    left: 70px;
+    transform: rotate(-45deg);
+} */
+
+.day__programm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.section__day-programm{
+    display: flex;
+    flex-direction: column;
+    
+}
+.space{
+    padding-bottom: 70px;
+}
+.section__day-programm-one{
+    width: 200px;
+}
+.rings__img{
+    width: 80px;
+}
+.eat__img{
+    width: 100px;
+}
+.here__img{
+    width: 100px;
+}
+.tort__img{
+    width: 100px;
+}
+.day__programm-heart{
+    width: 30px;
+}
+.section__day-programm-two{
+
+    width: 200px;
+}
+.section__day-programm-tree{
+    width: 200px;
+}
+.heart__img{
+    background-image: url(/fonts/heart_full.png) no-repeat;
+}
+hr{
+    width: 1px;
+    height: 120px;
+    margin: -10px 49% -5px 49.7%;
+    background-color: rgba(28, 102, 28, 0.432);
+}
