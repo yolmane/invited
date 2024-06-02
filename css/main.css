@@ -79,7 +79,7 @@ body    {
     height: 500px;
     width: 500px;
     align-items: center;
-    background: url(/fonts/center.png) no-repeat center top/cover;
+    background: url(./fonts/center.png) no-repeat center top/cover;
     background-size: cover;
 }
 .logo__img{
@@ -211,7 +211,7 @@ body    {
     height: 40px;
 }
 .td__img-heart  {
-    background: url(/fonts/heart_kris.png);
+    background: url(./fonts/heart_kris.png);
     background-repeat: no-repeat;
     background-size: 100% 40px;
 }
@@ -340,7 +340,7 @@ body    {
     width: 200px;
 }
 .heart__img{
-    background-image: url(/fonts/heart_full.png) no-repeat;
+    background-image: url(./fonts/heart_full.png) no-repeat;
 }
 hr{
     width: 1px;
