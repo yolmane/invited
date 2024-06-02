@@ -58,7 +58,14 @@ body    {
     width: 30%;
     height: 100%;
 }
+.containers-1{
+    box-sizing: content-box;
+    width: 30%;
+    height: 100%;
+}
 .header__newlyweds {
+    justify-content: center;
+    padding: 0 10%;
     display: flex;
     align-items: center;
     width: 100%;
@@ -225,7 +232,7 @@ body    {
     align-items: center;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    justify-content: space-around
 }
 .traveler__block-center {
     font-size: 14px;
@@ -301,6 +308,11 @@ body    {
     transform: rotate(-45deg);
 } */
 
+.programm__day-img{
+    margin-top: 20px;
+    width: 300px;
+    height: 90px;
+}
 .day__programm{
     width: 100%;
     display: flex;
@@ -316,7 +328,13 @@ body    {
     padding-bottom: 70px;
 }
 .section__day-programm-one{
-    width: 200px;
+    width: 150px;
+}
+.section__day-programm-two{
+    width: 100px;
+}
+.section__day-programm-tree{
+    width: 150px;
 }
 .rings__img{
     width: 80px;
@@ -333,13 +351,13 @@ body    {
 .day__programm-heart{
     width: 30px;
 }
-.section__day-programm-two{
+.day__programm--center-list{
+    height: 600px;
+    filter: alpha(Opacity = 50);
+    opacity: 0.50;
+    rotate: 123deg;
+}
 
-    width: 200px;
-}
-.section__day-programm-tree{
-    width: 200px;
-}
 .heart__img{
     background-image: url(./fonts/heart_full.png) no-repeat;
 }
