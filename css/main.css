@@ -211,7 +211,7 @@ body    {
     height: 40px;
 }
 .td__img-heart  {
-    background: url(./fonts/heart_kris.png);
+    background: url(/fonts/heart_kris.png);
     background-repeat: no-repeat;
     background-size: 100% 40px;
 }
