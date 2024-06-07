@@ -18,7 +18,17 @@ ul{
     /* max-width: 1240px; */
     margin: 0 auto;
 }
+.toggleButton {
+    background-image: url('../fonts/volume_on.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border: 0;
+}
 
+.toggleButton.paused {
+    background-image: url('../fonts/volume_off.png');
+}
 body    {
     background-color: #f7f7f5;;
     padding: 0;
@@ -200,6 +210,10 @@ body    {
     width: 50%;
     rotate: 16deg;
 }
+.wrapper_list {
+    padding-top: 10px;
+    rotate: 16deg;
+}
 .calendar__img{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -337,7 +351,7 @@ body    {
     width: 150px;
 }
 .rings__img{
-    width: 80px;
+    width: 100px;
 }
 .eat__img{
     width: 100px;
@@ -387,6 +401,9 @@ hr{
     font-size: 14px;
     margin: 40px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contacts__center{
     display: flex;
@@ -394,3 +411,74 @@ hr{
     justify-content: center;
     align-items: center;
 }
+.wished__block-bottom{
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px; /* Добавляем немного отступа между кругами */
+}
+.pink { background-color: #eac7d6; }
+.blue { background-color: #a8c3be; }
+.green { background-color: #b2c76c; }
+.brown { background-color: #d6c4b5; }
+.purple { background-color: #bdaeca; }
+
+.wedding__date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/fonts/data.jpg) center / cover;
+    background-size: cover;
+    height: 300px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.block {
+    text-align: center;
+}
+
+.divider {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.5em;
+    color: #333;
+}
+footer {
+}
+.footer__wrapper {
+        z-index: -1;
+        position: absolute;
+        width: 90%;
+        height: 200px;
+        overflow: hidden;
+    }
+.footer__wrapper-one {
+    width: 100%; /* Ширина изображения равно 100% от ширины контейнера */
+    display: block; /* Убирает возможные пробелы между изображением и текстом */
+    position: absolute; /* Установка абсолютной позиции для изображения */
+    top: 0; /* Расположение изображения вверху контейнера */
+    left: 50%; /* Расположение изображения по центру контейнера по горизонтали */
+    transform: translateX(-50%); /* Смещение изображения на -50% его ширины для центрирования по горизонтали */
+    transform: translateY(-50%); /* Смещение изображения на -50% его ширины для центрирования по горизонтали */
+    rotate: -139deg;
+    }

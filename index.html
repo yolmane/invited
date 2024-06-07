@@ -7,6 +7,7 @@
     <title>INVITE</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header class="header relative">
         <div class="image__wrapper wrapper-one">
@@ -21,26 +22,22 @@
         <div class="container">
             <div class="header__inner">
                 <span>Приглашение</span>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">1</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">2</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">3</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">4</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">5</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="tel:+79160260455" class="phone-number">89160260455</a>
+                <audio id="music" src="./Lana Del Rey Young And Beautiful.mp3" loop></audio>
+                <button class="toggleButton" id="toggleButton"></button>
+                <script>
+                const music = document.getElementById('music');
+                const toggleButton = document.getElementById('toggleButton');
+
+                toggleButton.addEventListener('click', function() {
+                    if (music.paused) {
+                        music.play();
+                        toggleButton.classList.remove('paused');
+                    } else {
+                        music.pause();
+                        toggleButton.classList.add('paused');
+                    }
+                });
+                </script>
             </div>
         </div>
         </section>
@@ -217,20 +214,20 @@
         </div>
         <div class="section__day-programm-one">
             <div class="day__programm-img">
-                <img class="rings__img" src="./fonts/kolca.png" alt="">
+                <img class="rings__img" src="./fonts/here.png" alt="">
             </div>
             <div class="day__programm-text">
-                14:00
+                16:00
             </div>
             <div class="day__programm-text">
-                ЦЕРЕМОНИЯ<br> БРАКОСОЧЕТАНИЯ
+                сбор <br> гостей
             </div>
             <div class="space"></div>
             <div class="day__programm-img">
                 <img class="eat__img" src="./fonts/eat.png" alt="">
             </div>
             <div class="day__programm-text">
-                17:00
+                17:30
             </div>
             <div class="day__programm-text">
                 начало <br>банкета
@@ -256,20 +253,20 @@
         <div class="section__day-programm-tree">
             <div class="space"></div>
             <div class="day__programm-img">
-                <img class="here__img" src="./fonts/here.png" alt="">
+                <img class="here__img" src="./fonts/kolca.png" alt="">
             </div>
             <div class="day__programm-text">
-                16:00
+                17:00
             </div>
             <div class="day__programm-text">
-                сбор <br> гостей
+                церемония <br> бракосочетания
             </div>
             <div class="space"></div>
             <div class="day__programm-img">
                 <img class="tort__img" src="./fonts/tort.png" alt="">
             </div>
             <div class="day__programm-text">
-                21:40
+                21:30
             </div>
             <div class="day__programm-text">
                 свадебный <br> торт
@@ -303,23 +300,93 @@
     </section>
     <section class="contacts">
         <div class="contacts__center">
-            <div class="flex__center">
-                <img class="space__list" src="./fonts/list.png" alt="">
-            </div>
+            
             <img src="./fonts/contacts.png" alt="" width="400px">
             <div class="wished__block-center">
-                ЖЕНИХ: 8 (977) 449-49-98
+                ЖЕНИХ: 8 (977) 449-49-98 
             </div>
+            <img src="./fonts/phone.png" alt="" width="25px">
             <div class="wished__block-center">
-                <img src="./fonts/phone.png" alt="" width="30px">
+                невеста: 8 (916) 026-04-55 
             </div>
+            <img src="./fonts/phone.png" alt="" width="25px">
             <div class="wrapper_list-block">
-                <img class="wrapper__list" src="./fonts/wrapper_list.png" alt="" width="140px">
+                <img class="wrapper_list" src="./fonts/wrapper_list.png" alt="" width="140px">
             </div>
         </div>
-        <div class="space"></div>
+        <div class="contacts__center">
+            <img src="./fonts/dress.png" alt="" width="400px">
+        </div>
+        <div class="wished__block-bottom">
+            НАМ БУДЕТ ОЧЕНЬ ПРИЯТНО, <br> ЕСЛИ ВЫ ПОДДЕРЖИТЕ<br> ЦВЕТОВУЮ ГАММУ ТОРЖЕСТВА<br> В СВОИХ НАРЯДАХ
+        </div>
+        <div class="circle__flex">
+            <div class="circle green"></div>
+            <div class="circle blue"></div>
+            <div class="circle brown"></div>
+            <div class="circle pink"></div>
+            <div class="circle purple"></div>
+        </div>
     </section>
-
+    <section class="wedding__date">
+        <div class="wending__date-bloc">
+            
+            <div>27 июля 2024</div>
+            <div>До свадьбы осталось</div>
+            <div class="timer" id="timer">
+                <div class="block">
+                    <span id="days"></span>
+                    <br>Дней
+                </div>
+                <div class="divider">|</div>
+                <div class="block">
+                    <span id="hours"></span>
+                    <br>Часов
+                </div>
+                <div class="divider">|</div>
+                <div class="block">
+                    <span id="minutes"></span>
+                    <br>Минут
+                </div>
+                <div class="divider">|</div>
+                <div class="block">
+                    <span id="seconds"></span>
+                    <br>Секунд
+                </div>
+            </div>
+            
+            <script>
+                // Установка даты окончания таймера
+                const endDate = new Date('July 27, 2024 16:00:00').getTime();
+            
+                // Обновление таймера каждую секунду
+                const timerInterval = setInterval(() => {
+                    const now = new Date().getTime();
+                    const distance = endDate - now;
+            
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+                    document.getElementById('days').textContent = days;
+                    document.getElementById('hours').textContent = hours;
+                    document.getElementById('minutes').textContent = minutes;
+                    document.getElementById('seconds').textContent = seconds;
+            
+                    // Остановка таймера при достижении окончания
+                    if (distance < 0) {
+                        clearInterval(timerInterval);
+                        document.getElementById('timer').textContent = 'Время истекло!';
+                    }
+                }, 1000);
+            </script>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper"> 
+            <img class="footer__wrapper-one" src="./fonts/photo.png" alt="">
+        </div>
 </body>
-
 </html>
+
