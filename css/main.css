@@ -520,4 +520,11 @@ footer {
     margin-top: 10%;
     height: 155px;
     width: 300px;
-} 
+}
+
+/* Скрыть элемент на мобильных устройствах (ширина меньше 1000px) */
+@media (max-width: 1000px) {
+    #elementToHide {
+        display: none;
+    }
+}
