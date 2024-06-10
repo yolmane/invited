@@ -508,16 +508,16 @@ footer {
         justify-content: center;
     }
     #footer__list{
-        height: 450px;
+        height: 410px;
         display: block;
         position: absolute;
-        top: -11%;
-        left: 27%;
+        top: -7%;
+        left: 32%;
         transform: translateY(-50%);
         rotate: -147deg;
     }
     #footer__img{
-        margin-top: 36%;
+        margin-top: 40%;
         height: 130px;
         width: 260px;
     }
