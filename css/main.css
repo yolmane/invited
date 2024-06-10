@@ -518,6 +518,8 @@ footer {
     }
     #footer__img{
         margin-top: 36%;
+        height: 130px;
+        width: 260px;
     }
     #footer__wrapper{
         width: 600px;
