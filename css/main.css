@@ -443,7 +443,7 @@ hr{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background: url(/fonts/data.jpg) center / cover;
+    background: url(../fonts/data.jpg) center / cover;
     background-size: cover;
     height: 300px;
 }
