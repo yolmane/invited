@@ -527,4 +527,19 @@ footer {
     #elementToHide {
         display: none;
     }
+    #header{
+        padding: 0;
+    }
+    #header__newlyweds {
+        padding: 0;
+    }
+    #padding {
+        padding: 0;
+    }
+    #footer{
+        left: 33%;
+    }
+    #footer__img{
+        margin-top: 18%;
+    }
 }
